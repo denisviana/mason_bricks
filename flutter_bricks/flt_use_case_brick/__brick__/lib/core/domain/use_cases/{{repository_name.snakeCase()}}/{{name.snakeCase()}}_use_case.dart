@@ -2,6 +2,7 @@ import '../../repositories/{{#create_entity}}{{repository_name.snakeCase()}}/{{r
 
 import '../base/base_use_case.dart';
 
+///Create param class
 {{#use_param_class}}
 class {{name.pascalCase()}}Params {
 
@@ -11,6 +12,7 @@ class {{name.pascalCase()}}Params {
 
 }
 
+///Create use case class
 {{#use_param_class}}
 class {{name.pascalCase()}}UseCase extends BaseFutureResourceUseCase<{{name.pascalCase()}Params}}, void>{
 
