@@ -3,7 +3,8 @@ import 'package:fort_dibbs_app/app/widgets/resource_widget.dart';
 import 'package:fort_dibbs_app/core/data/model/app_exception.dart';
 import 'package:get/get.dart';
 
-import '{{feature_name.snake_case()}}_controller.dart';
+import '../../../../widgets/error/app_error_widget.dart';
+import '{{feature_name.snakeCase()}}_controller.dart';
 
 class {{feature_name.pascalCase()}}Page extends GetView<{{feature_name.pascalCase()}}Controller> {
 
@@ -14,10 +15,7 @@ class {{feature_name.pascalCase()}}Page extends GetView<{{feature_name.pascalCas
   @override
   Widget build(BuildContext context) => Scaffold(
     appBar: AppBar(
-      title: SelectableText('App Bar title'),
-      actions: const [
-        ProfileIconButton(),
-      ],
+      title: const SelectableText('App Bar title'),
     ),
     body: Obx(
           () => ResourceWidget(
