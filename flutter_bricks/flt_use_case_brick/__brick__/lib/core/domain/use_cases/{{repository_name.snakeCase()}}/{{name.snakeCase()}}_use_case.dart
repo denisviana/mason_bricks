@@ -1,8 +1,7 @@
-import '../../repositories/{{#create_entity}}{{repository_name.snakeCase()}}/{{repository_name.snakeCase()}}_repository_implementation.dart';
+import '../../repositories/{{repository_name.snakeCase()}}/{{repository_name.snakeCase()}}_repository_implementation.dart';
 
 import '../base/base_use_case.dart';
 
-///Create param class
 {{#use_param_class}}
 class {{name.pascalCase()}}Params {
 
@@ -11,8 +10,8 @@ class {{name.pascalCase()}}Params {
   const {{name.pascalCase()}}Params({required this.property});
 
 }
+{{/use_param_class}}
 
-///Create use case class
 {{#use_param_class}}
 class {{name.pascalCase()}}UseCase extends BaseFutureResourceUseCase<{{name.pascalCase()}Params}}, void>{
 
@@ -26,6 +25,8 @@ class {{name.pascalCase()}}UseCase extends BaseFutureResourceUseCase<{{name.pasc
 
 }
 {{/use_param_class}}
+
+{{#use_param_class}}
 class {{name.pascalCase()}}UseCase extends BaseFutureResourceUseCase<void, void>{
 
   final {{repository_name.pascalCase()}}Repository _repository;

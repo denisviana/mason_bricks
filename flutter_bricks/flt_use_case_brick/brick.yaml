@@ -33,7 +33,3 @@ vars:
     type: boolean
     default: false
     prompt: Want to create a param class?
-#  create_entity:
-#    type: boolean
-#    default: false
-#    prompt: Want to create a entity class?
