@@ -37,7 +37,6 @@ vars:
     type: boolean
     default: false
     prompt: Want to create a entity class?
-
   if: create_entity == true
   entity_name:
     type: string
