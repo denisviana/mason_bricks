@@ -34,7 +34,7 @@ vars:
     prompt: Want to create a param class?
   create_entity:
     type: boolean
-    prompet: Want to create a entity class?
+    prompt: Want to create a entity class?
     vars:
       entity_name:
         type: string
