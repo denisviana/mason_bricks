@@ -1,10 +1,9 @@
 import 'package:get/get.dart';
+import '../${{feature_name.snakeCase}}_controller.dart';
 
-import '../pick_list_controller.dart';
-
-class PickListBindings extends Binding {
+class {{feature_name.camelCase}}Bindings extends Binding {
   @override
   List<Bind> dependencies() => [
-        Bind.lazyPut(PickListController.new),
-      ];
+    Bind.lazyPut({{feature_name.camelCase}}Controller.new),
+  ];
 }
