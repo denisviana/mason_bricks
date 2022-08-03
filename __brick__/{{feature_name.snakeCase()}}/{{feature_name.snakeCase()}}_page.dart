@@ -3,9 +3,9 @@ import 'package:fort_dibbs_app/app/widgets/resource_widget.dart';
 import 'package:fort_dibbs_app/core/data/model/app_exception.dart';
 import 'package:get/get.dart';
 
-import '${{{feature_name.snake_case()}}}_controller.dart';
+import '{{feature_name.snake_case()}}_controller.dart';
 
-class {{feature_name.camelCase()}}Page extends GetView<{{feature_name.camelCase()}}Controller> {
+class {{feature_name.pascalCase()}}Page extends GetView<{{feature_name.pascalCase()}}Controller> {
 
   static Future? get navigateTo => Get.toNamed('');
 

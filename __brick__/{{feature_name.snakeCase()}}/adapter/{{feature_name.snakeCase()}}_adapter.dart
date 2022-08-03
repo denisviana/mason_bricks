@@ -1,5 +1,5 @@
-abstract class {{feature_name.camelCase()}}Adapter {
+abstract class {{feature_name.pascalCase()}}Adapter {
 
-  {{feature_name.camelCase()}}Adapter._();
+  {{feature_name.pascalCase()}}Adapter._();
 
 }
