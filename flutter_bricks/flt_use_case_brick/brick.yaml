@@ -31,11 +31,13 @@ vars:
     prompt: What is the repository name (without 'repository' suffix)?
   use_param_class:
     type: boolean
+    default: false
     prompt: Want to create a param class?
   create_entity:
     type: boolean
+    default: false
     prompt: Want to create a entity class?
-    entity_name:
-      type: string
-      description: Entity name
-      prompt: What is the entity name (without 'entity' suffix)?
+      entity_name:
+        type: string
+        description: Entity name
+        prompt: What is the entity name (without 'entity' suffix)?
