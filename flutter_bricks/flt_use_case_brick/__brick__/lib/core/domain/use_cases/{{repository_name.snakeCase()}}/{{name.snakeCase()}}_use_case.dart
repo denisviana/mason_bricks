@@ -12,29 +12,14 @@ class {{name.pascalCase()}}Params {
 }
 {{/use_param_class}}
 
-{{#use_param_class}}
-class {{name.pascalCase()}}UseCase extends BaseFutureResourceUseCase<{{name.pascalCase()}Params}}, void>{
+class {{name.pascalCase()}}UseCase extends BaseFutureResourceUseCase<dynamic, dynamic>{
 
   final {{repository_name.pascalCase()}}Repository _repository;
 
   {{name.pascalCase()}}UseCase(this._repository);
 
   @override
-  Future<void> call({{name.pascalCase()}Params}} params) async =>
-    await _loginRepository.{{name.camelCase()}}(property: params.property);
-
-}
-{{/use_param_class}}
-
-{{#use_param_class}}
-class {{name.pascalCase()}}UseCase extends BaseFutureResourceUseCase<void, void>{
-
-  final {{repository_name.pascalCase()}}Repository _repository;
-
-  {{name.pascalCase()}}UseCase(this._repository);
-
-  @override
-  Future<void> call({{name.pascalCase()}Params}} params) async =>
-  await _loginRepository.{{name.camelCase()}}(property: params.property);
+  Future<dynamic> call({{dynamic params) async =>
+    await _loginRepository.{{name.camelCase()}}(property: params);
 
 }
