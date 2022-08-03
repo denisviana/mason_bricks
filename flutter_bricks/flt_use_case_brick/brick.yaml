@@ -37,8 +37,8 @@ vars:
     type: boolean
     default: false
     prompt: Want to create a entity class?
-  - if: '$create_entity'
-    entity_name:
-      type: string
-      description: Entity name
-      prompt: What is the entity name (without 'entity' suffix)?
+- if: '$create_entity'
+  entity_name:
+    type: string
+    description: Entity name
+    prompt: What is the entity name (without 'entity' suffix)?
