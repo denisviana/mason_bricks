@@ -35,8 +35,7 @@ vars:
   create_entity:
     type: boolean
     prompt: Want to create a entity class?
-    vars:
-      entity_name:
-        type: string
-        description: Entity name
-        prompt: What is the entity name (without 'entity' suffix)?
+    entity_name:
+      type: string
+      description: Entity name
+      prompt: What is the entity name (without 'entity' suffix)?
