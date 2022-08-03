@@ -10,7 +10,7 @@ class {{feature_name.pascalCase()}}Page extends GetView<{{feature_name.pascalCas
 
   static Future? get navigateTo => Get.toNamed('');
 
-  const PickListPage({Key? key}) : super(key: key);
+  const {{feature_name.pascalCase()}}Page({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) => Scaffold(
